@@ -511,7 +511,7 @@
   <header>
     <div class="wrap nav">
       <a class="brand" href="#home" aria-label="KBP Homes home">
-        <img src="images/B7452F89-DD35-4C2E-9155-F1FEB839C896%20(2).jpg" alt="KBP Homes logo">
+        <img src="B7452F89-DD35-4C2E-9155-F1FEB839C896%20(2).jpg" alt="KBP Homes logo">
         <span class="brand-name">KBP HOMES</span>
       </a>
       <nav class="nav-links" aria-label="Main navigation">
@@ -532,7 +532,7 @@
           <a class="button" href="#homes">Explore the homes</a>
         </div>
         <div class="hero-logo-card" aria-label="KBP Homes brand">
-          <img src="images/B7452F89-DD35-4C2E-9155-F1FEB839C896%20(2).jpg" alt="KBP Homes logo">
+          <img src="B7452F89-DD35-4C2E-9155-F1FEB839C896%20(2).jpg" alt="KBP Homes logo">
           <p class="hero-logo-caption">Built around the way you live</p>
         </div>
       </div>
@@ -736,7 +736,7 @@
     function updateGalleryImage() {
       const filename = activeModel.images[activeImageIndex];
       lightboxTitle.textContent = activeModel.name;
-      lightboxImage.src = "images/" + encodeURIComponent(filename).replace(/%2F/gi, "/");
+      lightboxImage.src = "" + encodeURIComponent(filename).replace(/%2F/gi, "/");
       lightboxImage.alt = activeModel.name + " home photo " + (activeImageIndex + 1);
       lightboxCounter.textContent =
         "Photo " + (activeImageIndex + 1) + " of " + activeModel.images.length;
@@ -791,7 +791,7 @@
         button.addEventListener("click", () => openGallery(model, imageIndex));
 
         const image = document.createElement("img");
-        image.src = "images/" + encodeURIComponent(filename).replace(/%2F/gi, "/");
+        image.src = "" + encodeURIComponent(filename).replace(/%2F/gi, "/");
         image.alt = model.name + " home photo " + (imageIndex + 1);
         image.loading = "lazy";
 
